@@ -17,7 +17,7 @@ def is_armstrong_number(number):
     return number == sum_of_digits
 
 
-print(is_armstrong_number(9))
-print(is_armstrong_number(10))
-print(is_armstrong_number(153))
-print(is_armstrong_number(154))
+# print(is_armstrong_number(9))
+# print(is_armstrong_number(10))
+# print(is_armstrong_number(153))
+# print(is_armstrong_number(154))
