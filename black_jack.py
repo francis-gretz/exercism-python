@@ -61,8 +61,7 @@ def higher_card(card_one, card_two):
     if value_one > value_two:
         return card_one
 
-    if value_two > value_one:
-        return card_two
+    return card_two
 
 
 def value_of_ace(card_one, card_two):
@@ -80,11 +79,11 @@ def value_of_ace(card_one, card_two):
 
     value_one = value_of_card(card_one)
     value_two = value_of_card(card_two)
-    sum = value_one + value_two
-    if (21 - sum) >= 11:
+    sum_of_cards = value_one + value_two
+    if (21 - sum_of_cards) >= 11:
         return 11
-    else:
-        return 1
+
+    return 1
 
 
 def is_blackjack(card_one, card_two):
@@ -134,6 +133,6 @@ def can_double_down(card_one, card_two):
     """
     value_one = value_of_card(card_one)
     value_two = value_of_card(card_two)
-    sum = value_one + value_two
+    sum_of_cards = value_one + value_two
 
-    return 9 <= sum <= 11
+    return 9 <= sum_of_cards <= 11
